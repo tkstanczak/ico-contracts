@@ -8,5 +8,9 @@
     "test": "test",
     "migrations": "migrations"
   },
-  "license": "GPL3"
+  "license": "GPL3",
+  "dependencies": {
+    "solc": "^0.4.6",
+    "solidity": "0.0.1"
+  }
 }

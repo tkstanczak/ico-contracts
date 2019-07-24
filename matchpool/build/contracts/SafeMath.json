@@ -1,0 +1,17 @@
+{
+  "contractName": "SafeMath",
+  "abi": [],
+  "bytecode": "0x60606040523415600b57fe5b5b60338060196000396000f30060606040525bfe00a165627a7a72305820e33e8bee0a117061f517ce3fd10ab70b0a594a9a7a7ec80901dd7f53551ecb830029",
+  "deployedBytecode": "0x60606040525bfe00a165627a7a72305820e33e8bee0a117061f517ce3fd10ab70b0a594a9a7a7ec80901dd7f53551ecb830029",
+  "sourceMap": "27:403:3:-;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:403:3:-;;;;",
+  "source": "pragma solidity ^0.4.6;\r\n\r\ncontract SafeMath {\r\n\r\n  function assert(bool assertion) internal {\r\n    if (!assertion) throw;\r\n  }\r\n\r\n  function safeMul(uint a, uint b) internal returns (uint) {\r\n    uint c = a * b;\r\n    assert(a == 0 || c / a == b);\r\n    return c;\r\n  }\r\n\r\n  function safeDiv(uint a, uint b) internal returns (uint) {\r\n    assert(b > 0);\r\n    uint c = a / b;\r\n    assert(a == b * c + a % b);\r\n    return c;\r\n  }\r\n\r\n}\r\n",
+  "sourcePath": "C:\\src\\ico-contracts\\matchpool\\contracts\\SafeMath.sol",
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.9+commit.364da425.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.0-beta.2",
+  "updatedAt": "2019-07-24T16:59:22.866Z"
+}
